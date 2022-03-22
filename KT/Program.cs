@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ciphers;
+using System;
 
 namespace KT
 {
@@ -6,7 +7,18 @@ namespace KT
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PZ2();
+        }
+
+        static void PZ2()
+        {
+            string originalText = "Микулич Кирилл Александрович";
+            int n = 3;
+            int m = 10;
+            string cipherText = TabularRoutingCipher.Encrypting(originalText, n, m);
+            string text = TabularRoutingCipher.Decrypting(cipherText, n, m);
+
+            Console.WriteLine($"Original text: {originalText}\nCipher text: {cipherText}\nDecrypt text: {text}");
         }
     }
 }

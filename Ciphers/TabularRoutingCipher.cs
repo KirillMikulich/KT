@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace RPC
+namespace Ciphers
 {
     public static class TabularRoutingCipher
     {

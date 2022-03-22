@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KT", "KT\KT.csproj", "{615F7450-9AE2-4D4F-A47A-6F604E7A35A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabularRoutingCipher", "RPC\TabularRoutingCipher.csproj", "{DFA2AE67-35F5-4F34-91F8-64964901071E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers", "Ciphers\Ciphers.csproj", "{21E44210-7CD0-4203-9462-3E73BA7C407F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{615F7450-9AE2-4D4F-A47A-6F604E7A35A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{615F7450-9AE2-4D4F-A47A-6F604E7A35A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{615F7450-9AE2-4D4F-A47A-6F604E7A35A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFA2AE67-35F5-4F34-91F8-64964901071E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFA2AE67-35F5-4F34-91F8-64964901071E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFA2AE67-35F5-4F34-91F8-64964901071E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFA2AE67-35F5-4F34-91F8-64964901071E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E44210-7CD0-4203-9462-3E73BA7C407F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E44210-7CD0-4203-9462-3E73BA7C407F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E44210-7CD0-4203-9462-3E73BA7C407F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E44210-7CD0-4203-9462-3E73BA7C407F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
