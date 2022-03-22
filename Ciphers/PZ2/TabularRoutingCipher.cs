@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Ciphers
+namespace Ciphers.PZ2
 {
     public static class TabularRoutingCipher
     {
@@ -50,8 +50,8 @@ namespace Ciphers
             {
                 text = IsLengthStringEqualLengthMatrix(text, n, m);
 
-                for(int j=0, k=0; j<m; j++)
-                    for(int i=0; i<n; i++)
+                for (int j = 0, k = 0; j < m; j++)
+                    for (int i = 0; i < n; i++)
                     {
                         cipherArray[i, j] = text[k].ToString();
                         k++;
@@ -78,8 +78,8 @@ namespace Ciphers
 
         private static string IsLengthStringEqualLengthMatrix(string text, int n, int m)
         {
-            if (n*m > text.Length)
-                for(int i=0; i<= ((n*m) - text.Length); i++)
+            if (n * m > text.Length)
+                for (int i = 0; i <= ((n * m) - text.Length); i++)
                     text += "_";
 
             if (n * m < text.Length)
@@ -88,7 +88,7 @@ namespace Ciphers
                 Environment.Exit(0);
             }
 
-            return text;        
+            return text;
         }
 
     }
