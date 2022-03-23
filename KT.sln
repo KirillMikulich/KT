@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KT", "KT\KT.csproj", "{615F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciphers", "Ciphers\Ciphers.csproj", "{21E44210-7CD0-4203-9462-3E73BA7C407F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E6C4961-0ED3-4DDB-B6DA-877C1C256F7D}"
+	ProjectSection(SolutionItems) = preProject
+		File1.txt = File1.txt
+		File2.txt = File2.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

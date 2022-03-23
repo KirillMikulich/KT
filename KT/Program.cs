@@ -1,5 +1,8 @@
 ﻿using Ciphers.PZ2;
+using Ciphers.PZ3;
 using System;
+using System.IO;
+using System.Text;
 
 namespace KT
 {
@@ -7,7 +10,7 @@ namespace KT
     {
         static void Main(string[] args)
         {
-            PZ2();
+            PZ3();
         }
 
         static void PZ2()
@@ -49,6 +52,42 @@ namespace KT
             string strDecrypt = BeaufortCipher.Decrypt(strEncrypt, keyEn);
 
             Console.WriteLine($"Key = {keyEn} Text = {originTextEn} Cipher = {strEncrypt} Decrypt = {strDecrypt}");
+        }
+
+        static void PZ3()
+        {
+            string originalText = "Mikulich"; // Length = 8
+
+            Console.WriteLine("Task 1.");
+            string encrypt = StreamingEncryption.Encrypt(originalText);
+            string decrypt = StreamingEncryption.Decrypt(encrypt);
+            Console.WriteLine($"Text = {originalText} Cipher = {encrypt} Decrypt = {decrypt}");
+
+            Console.WriteLine("Task 2.");
+            string encrypt2 = SecondCipher.EncryptDecrypt(originalText);
+            string decrypt2 = SecondCipher.EncryptDecrypt(encrypt2);
+            Console.WriteLine($"Text = {originalText} Cipher = {encrypt2} Decrypt = {decrypt2}");
+
+            Console.WriteLine("Task 3.");
+
+            using StreamReader reader = new StreamReader(@"C:\Users\k.mikulich\source\repos\KT\File1.txt", Encoding.UTF8);
+            string text = reader.ReadToEnd();
+
+            //a = должно бытьвзаимно простым с размером алфавита
+            string str = ThirdCipher.Encrypt(text, 4, 4);
+
+
+            using StreamWriter writer = new StreamWriter(@"C:\Users\k.mikulich\source\repos\KT\File2.txt", false, Encoding.UTF8);
+            writer.WriteLine("Encrypt");
+            writer.WriteLine(str);
+
+            var str2 = ThirdCipher.Decrypt(str, 4);
+            writer.WriteLine("Decrypt");
+            foreach (var i in str2)
+                writer.WriteLine(i);
+
+            reader.Close();
+            writer.Close();
         }
     }
 }
